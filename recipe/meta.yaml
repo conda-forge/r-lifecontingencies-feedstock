@@ -1,4 +1,4 @@
-{% set version = '1.3.8' %}
+{% set version = "1.3.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lifecontingencies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lifecontingencies/lifecontingencies_{{ version }}.tar.gz
-  sha256: f0f29276ffb687fbfa803573a6ba0738786f8e05ab1000683f88a3d426db3461
+  sha256: dd1e7d584be602d3fc30d193ace854b72b25964c0b591a82215bf833dbcc4ea4
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -49,13 +49,10 @@ test:
 about:
   home: https://github.com/spedygiorgio/lifecontingencies
   license: MIT
-  summary: "Classes and methods that allow the user to manage life table, actuarial tables (also
-    multiple decrements tables). Moreover, functions to easily perform demographic,
-    financial and actuarial mathematics on life contingencies insurances calculations
-    are contained therein. See Spedicato (2013)\t<doi:10.18637/jss.v055.i10>."
+  summary: "Classes and methods that allow the user to manage life table, actuarial tables (also multiple decrements tables). Moreover, functions to easily perform demographic, financial and actuarial mathematics on life contingencies insurances calculations are contained therein. See Spedicato (2013)\t<doi:10.18637/jss.v055.i10>."
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
