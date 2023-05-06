@@ -47,10 +47,10 @@ test:
   requires:
     - r-testthat
   commands:
-    - $R -e "library('lifecontingencies')"                         # [not win]
-    - $R -e "testthat::test_package('lifecontingencies')"          # [not win]
-    - "\"%R%\" -e \"library('lifecontingencies')\""                # [win]
-    - "\"%R%\" -e \"testthat::test_package('lifecontingencies')\"" # [win]
+    - $R -e "library('lifecontingencies')"                          # [not win]
+    - $R -e "testthat::test_package('lifecontingencies')"           # [not win]
+    - "\"%R%\" -e \"library('lifecontingencies')\""                 # [win]
+    - "\"%R%\" -e \"testthat::test_package('lifecontingencies')\""  # [win]
 
 about:
   home: https://github.com/spedygiorgio/lifecontingencies
