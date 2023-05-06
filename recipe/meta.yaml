@@ -1,4 +1,4 @@
-{% set version = "1.3.9" %}
+{% set version = "1.3.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lifecontingencies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lifecontingencies/lifecontingencies_{{ version }}.tar.gz
-  sha256: dd1e7d584be602d3fc30d193ace854b72b25964c0b591a82215bf833dbcc4ea4
+  sha256: aa7a7431c724f569fc63a36783914cd9d9366b07393d8a7a110c5781f15873da
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
