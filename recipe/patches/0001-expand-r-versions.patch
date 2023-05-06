@@ -1,0 +1,22 @@
+From fa6bf2fea7c96f0186481d27c167a5ef8888e751 Mon Sep 17 00:00:00 2001
+From: Mervin Fansler <mmfansler@gmail.com>
+Date: Sat, 6 May 2023 11:21:30 -0400
+Subject: [PATCH] expand r support
+
+---
+ DESCRIPTION | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/DESCRIPTION b/DESCRIPTION
+index 334dad4..6113e14 100644
+--- a/DESCRIPTION
++++ b/DESCRIPTION
+@@ -17,7 +17,7 @@ Description: Classes and methods that allow the user to manage life table,
+     perform demographic, financial and actuarial mathematics on life contingencies
+     insurances calculations are contained therein. See Spedicato (2013)	<doi:10.18637/jss.v055.i10>.
+ Depends:
+-    R (>= 4.3),
++    R (>= 4.1),
+     methods
+ Imports:
+     parallel,
