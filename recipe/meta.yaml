@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lifecontingencies_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lifecontingencies/lifecontingencies_{{ version }}.tar.gz
-  sha256: 25feac23c23abf56f4b586571945f0675340013edff6f6b3276ca93f7597db08
+  sha256: 777176217fb0ad2cb5c05c381b1afe30ff67ebe5b719ef54f38216d1c1499af8
 
 build:
   number: 0
